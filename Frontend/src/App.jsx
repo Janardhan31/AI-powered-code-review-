@@ -50,9 +50,9 @@ function App() {
           onClick={reveiewcode}
           className="review">Review</div>
         </div>
-        <div className="right"><Markdown rehypePlugins={{
+        <div className="right"><Markdown rehypePlugins={[
           rehypehighlight
-        }}>{review}</Markdown></div>
+        ]}>{review}</Markdown></div>
       </main>
     </>
   );
